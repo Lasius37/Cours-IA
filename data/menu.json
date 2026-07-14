@@ -1,0 +1,70 @@
+{	"home": {
+		"id": "navbar__home",
+		"target": "index",
+		"icon": "bi bi-house-fill",
+		"text": "Accueil"
+	},
+	"menu": [
+		{
+			"title": "Concepts de base",
+			"subMenu": [
+				{
+					"tag": "recognize",
+					"text": "Reconnaître une IA"
+				},
+				{
+					"tag": "understand",
+					"text": "Comprendre le fonctionnement d'une IA"
+				},
+				{
+					"tag": "project-game",
+					"text": "Projet : le jeu pierre-feuille-ciseaux"
+				}
+			]
+		},
+		{
+			"title": "Concepts intermédiaires",
+			"subMenu": [
+				{
+					"tag": "prompt",
+					"text": "Donner une consigne à une IA"
+				},
+				{
+					"tag": "data",
+					"text": "Choisir les données à fournir à une IA"
+				},
+				{
+					"tag": "project-document",
+					"text": "Projet : produire un document avec une IA générative"
+				}
+			]
+		},
+		{
+			"title": "Concepts avancés",
+			"subMenu": [
+				{
+					"tag": "check",
+					"text": "Vérifier une production d'IA"
+				},
+				{
+					"tag": "use",
+					"text": "Savoir quand on peut utiliser une IA"
+				},
+				{
+					"tag": "case-homework",
+					"text": "Étude de cas : un travail d'élève produit avec l'IA"
+				}
+			]
+		},
+		{
+			"title": "Bonus",
+			"subMenu": [
+				{
+					"tag": "commandments",
+					"text": "10 commandements pour utiliser une IA"
+				}
+			]
+		}
+	]
+}
+
