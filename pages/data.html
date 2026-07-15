@@ -66,7 +66,52 @@
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <p>
+                        Avant d’envoyer une consigne, un texte, une image ou un document à une IA, il faut examiner
+                        toutes les informations qu’ils contiennent. Une donnée peut appartenir à plusieurs catégories.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Donnée</th>
+                            <th>Condition</th>
+                            <th>Exemples</th>
+                            <th>Dans un prompt</th>
+                        </tr>
+                        <tr>
+                            <td class="center">utile</td>
+                            <td>nécessaire pour réaliser la tâche</td>
+                            <td>sujet, niveau scolaire, document à résumer, ...</td>
+                            <td>à transmettre si pas de risque</td>
+                        </tr>
+                        <tr>
+                            <td class="center">inutile</td>
+                            <td>sans rapport avec la tâche</td>
+                            <td></td>
+                            <td>à éviter pour ne pas brouiller la réponse</td>
+                        </tr>
+                        <tr>
+                            <td class="center">personnelle</td>
+                            <td>identifie une personne directement ou indirectement</td>
+                            <td>nom, photo, voix, classe, adresse, immatriculation</td>
+                            <td>à anonymiser avant de transmettre si utile</td>
+                        </tr>
+                        <tr>
+                            <td class="center">sensible</td>
+                            <td>information particulièrement protégée sur une personne</td>
+                            <td>santé, religion, opinion politique, empreinte digitale</td>
+                            <td>ne pas transmettre</td>
+                        </tr>
+                        <tr>
+                            <td class="center">confidentielle</td>
+                            <td>accès à un compte, de l’argent, une information privée</td>
+                            <td>Identifiant, mot de passe, numéro bancaire</td>
+                            <td>ne jamais transmettre</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Anonymiser consiste à supprimer ou modifier les informations qui permettent d’identifier
+                        directement ou indirectement une personne.
+                    </p>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -91,12 +136,41 @@
 
                         <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                         <div class="layout__text">
-
+                            <ul>
+                                <li>
+                                    Identifier le type de données dans le prompt et le document joint en utilisant le
+                                    code suivant :
+                                </li>
+                            </ul>
+                            <table>
+                                <tr>
+                                    <td class="center">Donnée<br>utile</td>
+                                    <td class="center">Donnée<br>inutile</td>
+                                    <td class="center">Donnée<br>personnelle</td>
+                                    <td class="center">Donnée<br>sensible</td>
+                                    <td class="center">Donnée<br>confidentielle</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">U</td>
+                                    <td class="center">I</td>
+                                    <td class="center">P</td>
+                                    <td class="center">S</td>
+                                    <td class="center">C</td>
+                                </tr>
+                            </table>
+                            <p class="ai">
+                                Je suis Léa Martin, élève de 4eB au collège Jean-Moulin à Ajaccio. À partir du pdf
+                                joint, crée une affiche pour annoncer notre sortie du club nature dont je suis
+                                présidente. Indique la date, l’heure, le lieu de rendez-vous et le matériel nécessaire.
+                                Ajoute mon nom pour préciser que je collecte les inscriptions.
+                            </p>
+                            <img class="illustration" src="../assets/data/inscription.png" alt="La fiche d'inscription à la sortie">
+                            <ul>
+                                <li>Réécrire un prompt correct qui transmet les bonnes données.</li>
+                            </ul>
                         </div>
                     </div>
                 </li>
-
-                <div class="separator"></div>
             </ol>
         </section>
     </main>

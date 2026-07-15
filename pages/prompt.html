@@ -72,7 +72,38 @@
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <table>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Contenu</th>
+                        </tr>
+                        <tr>
+                            <td>Contexte</td>
+                            <td>Situation ou sujet</td>
+                        </tr>
+                        <tr>
+                            <td>Consigne</td>
+                            <td>Action demandée</td>
+                        </tr>
+                        <tr>
+                            <td>Format</td>
+                            <td>Forme de la réponse</td>
+                        </tr>
+                        <tr>
+                            <td>Vérification</td>
+                            <td>Ce que l’IA doit respecter et ce que l’utilisateur devra contrôler</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Cette structure de prompt est la plus simple. Elle est très utile pour demander une
+                        explication. Exemple :
+                    </p>
+                    <p class="ai">
+                        Je suis en 4e et je travaille sur le théorème de Pythagore. Explique-moi dans quel cas on
+                        utilise le théorème et dans quel cas on utilise sa réciproque. Réponds sous la forme d’un
+                        tableau qui compare les deux utilisations. Dans le tableau, je dois voir les données, ce que
+                        je dois citer (théorème ou réciproque) au mot près, et la conclusion que je peux en tirer.
+                    </p>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -92,7 +123,39 @@
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <table>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Contenu</th>
+                        </tr>
+                        <tr>
+                            <td>Rôle</td>
+                            <td>Domaines de "compétences" de l'IA</td>
+                        </tr>
+                        <tr>
+                            <td>Tâche</td>
+                            <td>Action demandée, en découpant les étapes</td>
+                        </tr>
+                        <tr>
+                            <td>Contraintes</td>
+                            <td>Éléments obligatoires / interdits</td>
+                        </tr>
+                        <tr>
+                            <td>Résultat</td>
+                            <td>Réponse attendue (forme, organisation, détails, exemple)</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Donner un rôle à l’IA ne la transforme pas en professionnel. Cela sert uniquement à orienter
+                        le vocabulaire, le niveau et le type de réponse. Exemple :
+                    </p>
+                    <p class="ai">
+                        Tu es spécialiste de la conjugaison. Je suis en 3e et je révise le subjonctif présent. Crée
+                        20 flash-cards utilisant des verbes des trois groupes, dont être, avoir et aller. Présente-les
+                        dans un tableau à deux colonnes (infinitif et conjugaison complète). Mets les terminaisons
+                        en gras. N’oublie pas le "que". Vérifie que chaque verbe est correctement conjugué. Ne mets
+                        pas de verbes très rares (ex : poindre).
+                    </p>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -112,7 +175,42 @@
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <table>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Contenu</th>
+                        </tr>
+                        <tr>
+                            <td>Sujet</td>
+                            <td>Ce que l'IA doit représenter</td>
+                        </tr>
+                        <tr>
+                            <td>Imposés</td>
+                            <td>Ce qui doit être présent</td>
+                        </tr>
+                        <tr>
+                            <td>Exclus</td>
+                            <td>Ce qui ne doit pas être présent</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td>Style, taille, format, ... de l'image</td>
+                        </tr>
+                    </table>
+                    <p>Quelques formats d’image courants :</p>
+                    <ul>
+                        <li>jpg : photos, ou image détaillée</li>
+                        <li>png : image nette ou avec transparence</li>
+                    </ul>
+                    <p>Exemple :</p>
+                    <p class="ai">
+                        Réalise une fiche de révision synthétique sur la photosynthèse, niveau 4ème. Cette image doit
+                        expliquer comment les plantes réalisent la photosynthèse de façon illustrée et facile à
+                        comprendre. Le fichier joint te donne les informations et le vocabulaire à faire figurer sur
+                        les schémas. Format .png, portrait, fond blanc, lisible sur une demi-feuille A4, dans le
+                        style d’un manuel scolaire soigné. Pas de carte mentale, très peu de texte sauf des
+                        titres et des légendes.
+                    </p>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -137,7 +235,50 @@
 
                         <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                         <div class="layout__text">
-
+                            <ul>
+                                <li>Ordonner correctement les phrases du prompt ci-dessous.</li>
+                            </ul>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="ai">
+                                            Présente la réponse sous la forme d’un tableau à trois colonnes : phénomène
+                                            observé, explication et exemple.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="ai">
+                                            Ajoute une liste des termes importants avec leur définition (évaporation,
+                                            précipitations, nappe phréatique, ruissellement).
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ai">Explique les principales étapes du cycle de l’eau.</p></td>
+                                    <td>
+                                        <p class="ai">
+                                            Je suis élève de 4e et je prépare une fiche de révision sur le cycle
+                                            de l’eau.
+                                        </p>
+                                    </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <p class="ai">
+                                            Ne donne pas d’explication trop complexe pour un élève de collège.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="ai">
+                                            Propose un quiz de 10 questions pour vérifier que j’ai bien compris.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li>Identifier le type de prompt.</li>
+                                <li>Identifier chaque étape du prompt.</li>
+                            </ul>
                         </div>
                     </div>
                 </li>
@@ -151,7 +292,19 @@
 
                         <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                         <div class="layout__text">
-
+                            <ul>
+                                <li>
+                                    Rédiger un prompt destiné à faire expliquer la différence entre aléa, enjeu et
+                                    risque à un élève de 4e. La réponse doit comporter un exemple de niveau collège
+                                    et un tableau de synthèse.
+                                </li>
+                                <li>
+                                    Tester votre prompt sur
+                                    <a href="https://duck.ai/" target="_blank noreferrer noopener">Duck.ai</a>
+                                </li>
+                                <li>La réponse obtenue vous satisfait-elle ?</li>
+                                <li>Comment aurait-on pu améliorer le prompt ?</li>
+                            </ul>
                         </div>
                     </div>
                 </li>
