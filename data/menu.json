@@ -18,7 +18,7 @@
 				},
 				{
 					"tag": "project-game",
-					"text": "Projet : le jeu pierre-feuille-ciseaux"
+					"text": "Projet : préparer le jeu pierre-feuille-ciseaux"
 				}
 			]
 		},
@@ -61,7 +61,7 @@
 			"subMenu": [
 				{
 					"tag": "commandments",
-					"text": "10 commandements pour utiliser une IA"
+					"text": "10 commandements pour utiliser l'IA"
 				}
 			]
 		}

@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="../js/script.js" defer></script>
-    <title>Titre</title>
+    <title>Projet Pierre-feuille-ciseaux</title>
 </head>
 <body>
     <!-- ***************************************************************************************************************
          HEADER
     **************************************************************************************************************** -->
     <header>
-        <h1>Titre</h1>
+        <h1>Projet : préparer le jeu pierre-feuille-ciseaux</h1>
 
         <!-- navbar
              ======================================================================================================= -->
@@ -43,7 +43,10 @@
                 <h2>Dans cette page</h2>
                 <ul>
                     <li class="sidebar__element">
-                        <a href="#my_id">Titre</a>
+                        <a href="#protocol">Protocole</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#questions">Questions</a>
                     </li>
                 </ul>
             </section>
@@ -57,13 +60,32 @@
 
         <!-- content section
              ======================================================================================================= -->
-        <section id="my_id">
-            <h2>Titre</h2>
+        <section id="protocol">
+            <p>
+                L'objectif est d'entraîner une IA à reconnaître les mains en position pierre-feuille-ciseaux.
+                Attention, cela ne suffira pas pour que le jeu soit fonctionnel.
+            </p>
+
+            <h2>Protocole</h2>
             <div class="layout">
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <ul>
+                        <li>Utiliser Teachable Machine (https://teachablemachine.withgoogle.com/train/image).</li>
+                        <li>
+                            Prendre 10 photos de vos mains dans chaque position, en variant (orientation,
+                            gauche/droite, distance, ...). On gardera le même fond pour toutes les images.
+                        </li>
+                        <li>Les déposer sur le serveur, dans Partage par exemple.</li>
+                        <li>Nommer les trois classes.</li>
+                        <li>Ajouter une classe "Aucune main", associée une photo d’un fond vide.</li>
+                        <li>Ajouter les bonnes images à chaque classe.</li>
+                        <li>Entraîner votre modèle.</li>
+                        <li>
+                            Tester votre modèle avec de nouvelles photos (ne pas réutiliser celles de l’entraînement).
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -77,24 +99,39 @@
 
         <!-- content section
              ======================================================================================================= -->
-        <section id="exercises">
-            <h2>Exercices</h2>
-            <ol>
+        <section id="questions">
+            <h2>Questions</h2>
+            <div class="layout">
 
-                <!-- exercise -------------------------------------------------------------------------------------- -->
-                <li>
-                    <h3>Titre</h3>
-                    <div class="layout">
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__text">
+                    <table>
+                        <tr>
+                            <td>Geste</td>
+                            <td>Pierre</td>
+                            <td>Feuille</td>
+                            <td>Ciseaux</td>
+                        </tr>
+                        <tr>
+                            <td>Confiance</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li>Quel geste est le mieux reconnu ?</li>
+                        <li>Comment améliorer le modèle ?</li>
+                    </ul>
+                </div>
 
-                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
-                        <div class="layout__text">
-
-                        </div>
-                    </div>
-                </li>
-
-                <div class="separator"></div>
-            </ol>
+                <!-- layout element -------------------------------------------------------------------------------- -->
+                <div class="layout__video">
+                    <video controls controlsList="nodownload" preload="metadata">
+                            <source src="../assets/variables/declare.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </section>
     </main>
 

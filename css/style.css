@@ -73,6 +73,11 @@ h1 {
     gap: var(--m-gap);
 }
 
+#navbar__home > span {
+    font-family: var(--title-font);
+    font-size: var(--text-size);
+}
+
 .navbar__element {
     display: flex;
     flex-wrap: nowrap;
@@ -265,15 +270,24 @@ h2 span, h3 span, .sidebar__element a span {
     margin: auto;
 }
 
-.layout__text table td {
+.layout__text table th, .layout__text table td {
     border: 1px solid black;
     min-width: 3em;
-    text-align: center;
     padding: 0 0.3rem;
 }
 
+.layout__text table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.layout__text table tr td {
+    font-weight: normal;
+    text-align: left;
+}
+
 .layout__text table td pre {
-    text-align: left
+    text-align: left;
 }
 
 /* *********************************************************************************************************************

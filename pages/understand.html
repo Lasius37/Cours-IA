@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="../js/script.js" defer></script>
-    <title>Titre</title>
+    <title>Fonctionnement</title>
 </head>
 <body>
     <!-- ***************************************************************************************************************
          HEADER
     **************************************************************************************************************** -->
     <header>
-        <h1>Titre</h1>
+        <h1>Comprendre le fonctionnement d'une IA</h1>
 
         <!-- navbar
              ======================================================================================================= -->
@@ -43,7 +43,10 @@
                 <h2>Dans cette page</h2>
                 <ul>
                     <li class="sidebar__element">
-                        <a href="#my_id">Titre</a>
+                        <a href="#tasks">Principales tâches réalisées par des IA</a>
+                    </li>
+                    <li class="sidebar__element">
+                        <a href="#exercises">Exercices</a>
                     </li>
                 </ul>
             </section>
@@ -57,13 +60,55 @@
 
         <!-- content section
              ======================================================================================================= -->
-        <section id="my_id">
-            <h2>Titre</h2>
+        <section id="tasks">
+            <h2>Principales tâches réalisées par des IA</h2>
             <div class="layout">
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
                 <div class="layout__text">
-
+                    <p>
+                        De nombreuses IA fonctionnent grâce à un apprentissage réalisé à partir de données. Elles
+                        repèrent alors des caractéristiques communes dans les exemples de la même catégorie. Elles
+                        utilisent ensuite ce qu’elles ont appris pour analyser une nouvelle donnée. Les IA sont
+                        capables de réaliser une ou plusieurs tâches :
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Tâche</th>
+                            <th>Fonction</th>
+                            <th>Exemple</th>
+                        </tr>
+                        <tr>
+                            <td>Classer</td>
+                            <td>Ranger une donnée dans une catégorie</td>
+                            <td>Spam ou non-spam</td>
+                        </tr>
+                        <tr>
+                            <td>Reconnaître</td>
+                            <td>Identifier un objet, un son, une forme</td>
+                            <td>Reconnaître un animal</td>
+                        </tr>
+                        <tr>
+                            <td>Prédire	Estimer</td>
+                            <td>un résultat futur ou inconnu</td>
+                            <td>Prévoir une consommation électrique</td>
+                        </tr>
+                        <tr>
+                            <td>Recommander</td>
+                            <td>Proposer un contenu adapté</td>
+                            <td>Musique, vidéo, produit</td>
+                        </tr>
+                        <tr>
+                            <td>Générer</td>
+                            <td>Produire un nouveau contenu</td>
+                            <td>Texte, image, son, vidéo</td>
+                        </tr>
+                        <tr>
+                            <td>Traduire</td>
+                            <td>Transformer un texte d’une langue à une autre</td>
+                            <td>Français vers anglais</td>
+                        </tr>
+                    </table>
                 </div>
 
                 <!-- layout element -------------------------------------------------------------------------------- -->
@@ -83,17 +128,45 @@
 
                 <!-- exercise -------------------------------------------------------------------------------------- -->
                 <li>
-                    <h3>Titre</h3>
+                    <h3>Exercice débranché : Probabilités</h3>
                     <div class="layout">
 
                         <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                         <div class="layout__text">
-
+                            <ul>
+                                <li>Compléter la phrase : "Le chat est assis sur...".</li>
+                                <li>Lister les réponses données dans le groupe.</li>
+                                <li>Les autres réponses sont-elles forcément fausses ?</li>
+                                <li>Comment une IA pourrait-elle choisir une réponse ?</li>
+                                <li>Une réponse probable est-elle toujours vraie ?</li>
+                            </ul>
                         </div>
                     </div>
                 </li>
 
                 <div class="separator"></div>
+
+                <!-- exercise -------------------------------------------------------------------------------------- -->
+                <li>
+                    <h3>Manipulation : Dessiner c'est gagné !</h3>
+                    <div class="layout">
+
+                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                        <div class="layout__text">
+                            <ul>
+                                <li>Utiliser
+                                    <a href="https://quickdraw.withgoogle.com" target="_blank noopener noreferrer">
+                                        Quick, Draw!
+                                    </a>
+                                </li>
+                                <li>L’outil propose-t-il plusieurs réponses avant de reconnaître le dessin ?</li>
+                                <li>Un dessin détaillé est-il toujours mieux reconnu ?</li>
+                                <li>Pourquoi deux dessins du même objet donnent-ils des résultats différents ?</li>
+                                <li>L’outil comprend-il l’objet ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
             </ol>
         </section>
     </main>
