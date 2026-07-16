@@ -340,13 +340,22 @@ h2 span, h3 span, .sidebar__element a span {
     text-indent: 0;
 }
 
-.layout__text .handwriting {
-    color: #3D55CC;
-    font-family: var(--handwriting-font);
+.layout__text .answer {
+    border: 1px solid black;
+    font-family: var(--ai-font);
+    background-color: var(--ai-ultralight);
+    margin: var(--s-gap) auto;
+    padding: 0 var(--s-gap);
+    box-sizing: border-box;
     text-indent: 0;
+}
+
+.layout__text img.homework {
+    min-width: 250px;
+    width: 70%;
+    max-width: 800px;
     border: 1px solid black;
     padding: 0 var(--s-gap);
-    font-weight: bold;
 }
 
 .layout__text .console {
@@ -362,6 +371,19 @@ h2 span, h3 span, .sidebar__element a span {
 .layout__text img {
     display: block;
     margin: auto;
+}
+
+.layout__text table.margin {
+    margin-bottom: var(--s-gap);
+}
+
+.layout__text table td .ai {
+    margin: var(--xs-gap) 0;
+}
+
+.layout__text img.illustration {
+    border: 1px solid black;
+    margin-top: var(--s-gap);
 }
 
 .layout__text ul > li {
