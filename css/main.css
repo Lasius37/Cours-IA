@@ -149,7 +149,7 @@ p.ai {
     background-color: var(--ai-light);
     border-left: 5px solid var(--ai);
     padding: 0 0.5rem;
-    text-indent: none;
+    text-indent: 0;
     font-family: var(--ai-font);
     color: white;
 }
