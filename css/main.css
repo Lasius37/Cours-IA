@@ -145,9 +145,10 @@ main table pre, main table code {
     border-left: 5px solid var(--python);
 }
 
-.ai {
+p.ai {
     background-color: var(--ai-light);
     border-left: 5px solid var(--ai);
+    padding: 0 0.5rem;
     text-indent: none;
     font-family: var(--ai-font);
     color: white;
