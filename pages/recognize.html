@@ -1,232 +1,168 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="module" src="../js/script.js" defer></script>
-    <title>Reconnaître</title>
-</head>
-<body>
-    <!-- ***************************************************************************************************************
-         HEADER
-    **************************************************************************************************************** -->
-    <header>
-        <h1>Reconnaître une IA</h1>
+---
+layout: base
+short: "Classes"
+title: "Les classes"
+---
 
-        <!-- navbar
-             ======================================================================================================= -->
-        <nav>
-            <ul class="navbar"></ul>
-        </nav>
-    </header>
+<!-- content section
+     ======================================================================================================= -->
+<section id="what">
+    <h2>Ce que fait une IA (et ce qu'elle ne fait pas)</h2>
+    <div class="layout">
 
-    <!-- ***************************************************************************************************************
-         ASIDE
-    **************************************************************************************************************** -->
-    <aside>
+        <!-- layout element -------------------------------------------------------------------------------- -->
+        <div class="layout__text">
+            <p>
+                Une IA ne pense pas comme un humain. Elle traite des données à l’aide de calculs pour produire
+                un résultat, souvent sous la forme d’une prédiction. Lors de l’entraînement, elle construit un
+                modèle à partir de nombreux exemples. Ce modèle peut être utilisé pour analyser une nouvelle
+                donnée et produire un résultat. Pour savoir si un système utilise une IA, on peut se demander :
+            </p>
+            <ul>
+                <li>suit-il uniquement des règles écrites à l’avance ?</li>
+                <li>apprend-il à partir de nombreux exemples ?</li>
+                <li>produit-il une prédiction ?</li>
+                <li>reconnaît-il des images, des sons ou des textes ?</li>
+                <li>adapte-t-il son résultat à partir de données ?</li>
+            </ul>
+            <p>
+                Il est parfois difficile de savoir exactement comment fonctionne un outil. Un même appareil
+                peut utiliser plusieurs programmes, certains utilisant une IA et d’autres pas.
+            </p>
+        </div>
 
-        <!-- sidebar
-             ======================================================================================================= -->
-        <nav class="sidebar">
+        <!-- layout element -------------------------------------------------------------------------------- -->
+        <div class="layout__video">
+            <video controls controlsList="nodownload" preload="metadata">
+                    <source src="../assets/variables/declare.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
 
-            <!-- sidebar group ------------------------------------------------------------------------------------- -->
-            <section class="sidebar__group">
-                <h2>Dans cette page</h2>
-                <ul>
-                    <li class="sidebar__element">
-                        <a href="#what">Ce que fait une IA (et ce qu'elle ne fait pas)</a>
-                    </li>
-                    <li class="sidebar__element">
-                        <a href="#exercises">Exercice</a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-    </aside>
+<!-- content section
+     ======================================================================================================= -->
+<section id="exercises">
+    <h2>Exercice</h2>
+    <ol>
 
-    <!-- ***************************************************************************************************************
-         MAIN
-    **************************************************************************************************************** -->
-    <main>
-
-        <!-- content section
-             ======================================================================================================= -->
-        <section id="what">
-            <h2>Ce que fait une IA (et ce qu'elle ne fait pas)</h2>
+        <!-- exercise -------------------------------------------------------------------------------------- -->
+        <li>
+            <h3>Exercice débranché : Ah, y’a IA</h3>
             <div class="layout">
 
-                <!-- layout element -------------------------------------------------------------------------------- -->
+                <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                 <div class="layout__text">
-                    <p>
-                        Une IA ne pense pas comme un humain. Elle traite des données à l’aide de calculs pour produire
-                        un résultat, souvent sous la forme d’une prédiction. Lors de l’entraînement, elle construit un
-                        modèle à partir de nombreux exemples. Ce modèle peut être utilisé pour analyser une nouvelle
-                        donnée et produire un résultat. Pour savoir si un système utilise une IA, on peut se demander :
-                    </p>
                     <ul>
-                        <li>suit-il uniquement des règles écrites à l’avance ?</li>
-                        <li>apprend-il à partir de nombreux exemples ?</li>
-                        <li>produit-il une prédiction ?</li>
-                        <li>reconnaît-il des images, des sons ou des textes ?</li>
-                        <li>adapte-t-il son résultat à partir de données ?</li>
+                        <li>Pour chaque situation, déterminer si une IA est nécessaire, possible ou inutile.</li>
                     </ul>
-                    <p>
-                        Il est parfois difficile de savoir exactement comment fonctionne un outil. Un même appareil
-                        peut utiliser plusieurs programmes, certains utilisant une IA et d’autres pas.
-                    </p>
-                </div>
-
-                <!-- layout element -------------------------------------------------------------------------------- -->
-                <div class="layout__video">
-                    <video controls controlsList="nodownload" preload="metadata">
-                            <source src="../assets/variables/declare.mp4" type="video/mp4">
-                    </video>
+                    <table>
+                        <tr>
+                            <th>Situation</th>
+                            <th>IA obligatoirement</th>
+                            <th>Possible, mais pas forcément</th>
+                            <th>Pas besoin d'IA</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                J’ai reçu un mail pour mon anniversaire de la part d’une enseigne de vêtements
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>J’utilise Google Traduction</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Le chauffage se déclenche à 18 °C</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon enceinte connectée réagit à mes ordres</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mon ENT se déverrouille quand je lui donne mon identifiant et mon mot de passe
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon logiciel de messagerie détecte des spams dans ma boîte mail</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon robot de cuisine pèse les ingrédients</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon robot de cuisine me conseille des plats</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon robot tondeuse se met en route quand je lui dis sur mon smartphone</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mon téléphone se déverrouille quand je lui montre mon visage</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Netflix me recommande des films</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PlantNet identifie une plante à partir d’une photo</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Un feu tricolore change de couleur régulièrement</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Une calculatrice calcule 357208 x 34661</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Un robot sert les clients dans un espace donné, en naviguant d’un groupe à
+                                l’autre
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-        </section>
-
-        <!-- content section
-             ======================================================================================================= -->
-        <section id="exercises">
-            <h2>Exercice</h2>
-            <ol>
-
-                <!-- exercise -------------------------------------------------------------------------------------- -->
-                <li>
-                    <h3>Exercice débranché : Ah, y’a IA</h3>
-                    <div class="layout">
-
-                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
-                        <div class="layout__text">
-                            <ul>
-                                <li>Pour chaque situation, déterminer si une IA est nécessaire, possible ou inutile.</li>
-                            </ul>
-                            <table>
-                                <tr>
-                                    <th>Situation</th>
-                                    <th>IA obligatoirement</th>
-                                    <th>Possible, mais pas forcément</th>
-                                    <th>Pas besoin d'IA</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        J’ai reçu un mail pour mon anniversaire de la part d’une enseigne de vêtements
-                                    </td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>J’utilise Google Traduction</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Le chauffage se déclenche à 18 °C</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon enceinte connectée réagit à mes ordres</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Mon ENT se déverrouille quand je lui donne mon identifiant et mon mot de passe
-                                    </td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon logiciel de messagerie détecte des spams dans ma boîte mail</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon robot de cuisine pèse les ingrédients</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon robot de cuisine me conseille des plats</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon robot tondeuse se met en route quand je lui dis sur mon smartphone</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Mon téléphone se déverrouille quand je lui montre mon visage</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Netflix me recommande des films</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>PlantNet identifie une plante à partir d’une photo</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Un feu tricolore change de couleur régulièrement</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Une calculatrice calcule 357208 x 34661</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Un robot sert les clients dans un espace donné, en naviguant d’un groupe à
-                                        l’autre
-                                    </td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </section>
-    </main>
-
-    <!-- ***************************************************************************************************************
-         FOOTER
-    **************************************************************************************************************** -->
-    <footer>
-        <div>© Copyright - Guillaume Peyrard</div>
-    </footer>
-</body>
-</html>
+        </li>
+    </ol>
+</section>

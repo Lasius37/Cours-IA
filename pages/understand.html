@@ -1,181 +1,117 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="module" src="../js/script.js" defer></script>
-    <title>Fonctionnement</title>
-</head>
-<body>
-    <!-- ***************************************************************************************************************
-         HEADER
-    **************************************************************************************************************** -->
-    <header>
-        <h1>Comprendre le fonctionnement d'une IA</h1>
+---
+layout: base
+short: "Classes"
+title: "Les classes"
+---
 
-        <!-- navbar
-             ======================================================================================================= -->
-        <nav>
-            <ul class="navbar"></ul>
-        </nav>
-    </header>
+<!-- content section
+     ======================================================================================================= -->
+<section id="tasks">
+    <h2>Principales tâches réalisées par des IA</h2>
+    <div class="layout">
 
-    <!-- ***************************************************************************************************************
-         ASIDE
-    **************************************************************************************************************** -->
-    <aside>
+        <!-- layout element -------------------------------------------------------------------------------- -->
+        <div class="layout__text">
+            <p>
+                De nombreuses IA fonctionnent grâce à un apprentissage réalisé à partir de données. Elles
+                repèrent alors des caractéristiques communes dans les exemples de la même catégorie. Elles
+                utilisent ensuite ce qu’elles ont appris pour analyser une nouvelle donnée. Les IA sont
+                capables de réaliser une ou plusieurs tâches :
+            </p>
+            <table>
+                <tr>
+                    <th>Tâche</th>
+                    <th>Fonction</th>
+                    <th>Exemple</th>
+                </tr>
+                <tr>
+                    <td>Classer</td>
+                    <td>Ranger une donnée dans une catégorie</td>
+                    <td>Spam ou non-spam</td>
+                </tr>
+                <tr>
+                    <td>Reconnaître</td>
+                    <td>Identifier un objet, un son, une forme</td>
+                    <td>Reconnaître un animal</td>
+                </tr>
+                <tr>
+                    <td>Prédire</td>
+                    <td>Estimer un résultat futur ou inconnu</td>
+                    <td>Prévoir une consommation électrique</td>
+                </tr>
+                <tr>
+                    <td>Recommander</td>
+                    <td>Proposer un contenu adapté</td>
+                    <td>Musique, vidéo, produit</td>
+                </tr>
+                <tr>
+                    <td>Générer</td>
+                    <td>Produire un nouveau contenu</td>
+                    <td>Texte, image, son, vidéo</td>
+                </tr>
+                <tr>
+                    <td>Traduire</td>
+                    <td>Transformer un texte d’une langue à une autre</td>
+                    <td>Français vers anglais</td>
+                </tr>
+            </table>
+        </div>
 
-        <!-- sidebar
-             ======================================================================================================= -->
-        <nav class="sidebar">
+        <!-- layout element -------------------------------------------------------------------------------- -->
+        <div class="layout__video">
+            <video controls controlsList="nodownload" preload="metadata">
+                    <source src="../assets/variables/declare.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
 
-            <!-- sidebar group ------------------------------------------------------------------------------------- -->
-            <section class="sidebar__group">
-                <h2>Dans cette page</h2>
-                <ul>
-                    <li class="sidebar__element">
-                        <a href="#tasks">Principales tâches réalisées par des IA</a>
-                    </li>
-                    <li class="sidebar__element">
-                        <a href="#exercises">Exercices</a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-    </aside>
+<!-- content section
+     ======================================================================================================= -->
+<section id="exercises">
+    <h2>Exercices</h2>
+    <ol>
 
-    <!-- ***************************************************************************************************************
-         MAIN
-    **************************************************************************************************************** -->
-    <main>
-
-        <!-- content section
-             ======================================================================================================= -->
-        <section id="tasks">
-            <h2>Principales tâches réalisées par des IA</h2>
+        <!-- exercise -------------------------------------------------------------------------------------- -->
+        <li>
+            <h3>Exercice débranché : Probabilités</h3>
             <div class="layout">
 
-                <!-- layout element -------------------------------------------------------------------------------- -->
+                <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
                 <div class="layout__text">
-                    <p>
-                        De nombreuses IA fonctionnent grâce à un apprentissage réalisé à partir de données. Elles
-                        repèrent alors des caractéristiques communes dans les exemples de la même catégorie. Elles
-                        utilisent ensuite ce qu’elles ont appris pour analyser une nouvelle donnée. Les IA sont
-                        capables de réaliser une ou plusieurs tâches :
-                    </p>
-                    <table>
-                        <tr>
-                            <th>Tâche</th>
-                            <th>Fonction</th>
-                            <th>Exemple</th>
-                        </tr>
-                        <tr>
-                            <td>Classer</td>
-                            <td>Ranger une donnée dans une catégorie</td>
-                            <td>Spam ou non-spam</td>
-                        </tr>
-                        <tr>
-                            <td>Reconnaître</td>
-                            <td>Identifier un objet, un son, une forme</td>
-                            <td>Reconnaître un animal</td>
-                        </tr>
-                        <tr>
-                            <td>Prédire</td>
-                            <td>Estimer un résultat futur ou inconnu</td>
-                            <td>Prévoir une consommation électrique</td>
-                        </tr>
-                        <tr>
-                            <td>Recommander</td>
-                            <td>Proposer un contenu adapté</td>
-                            <td>Musique, vidéo, produit</td>
-                        </tr>
-                        <tr>
-                            <td>Générer</td>
-                            <td>Produire un nouveau contenu</td>
-                            <td>Texte, image, son, vidéo</td>
-                        </tr>
-                        <tr>
-                            <td>Traduire</td>
-                            <td>Transformer un texte d’une langue à une autre</td>
-                            <td>Français vers anglais</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!-- layout element -------------------------------------------------------------------------------- -->
-                <div class="layout__video">
-                    <video controls controlsList="nodownload" preload="metadata">
-                            <source src="../assets/variables/declare.mp4" type="video/mp4">
-                    </video>
+                    <ul>
+                        <li>Compléter la phrase : "Le chat est assis sur...".</li>
+                        <li>Lister les réponses données dans le groupe.</li>
+                        <li>Les autres réponses sont-elles forcément fausses ?</li>
+                        <li>Comment une IA pourrait-elle choisir une réponse ?</li>
+                        <li>Une réponse probable est-elle toujours vraie ?</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </li>
 
-        <!-- content section
-             ======================================================================================================= -->
-        <section id="exercises">
-            <h2>Exercices</h2>
-            <ol>
+        <div class="separator"></div>
 
-                <!-- exercise -------------------------------------------------------------------------------------- -->
-                <li>
-                    <h3>Exercice débranché : Probabilités</h3>
-                    <div class="layout">
+        <!-- exercise -------------------------------------------------------------------------------------- -->
+        <li>
+            <h3>Manipulation : Dessiner c'est gagné !</h3>
+            <div class="layout">
 
-                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
-                        <div class="layout__text">
-                            <ul>
-                                <li>Compléter la phrase : "Le chat est assis sur...".</li>
-                                <li>Lister les réponses données dans le groupe.</li>
-                                <li>Les autres réponses sont-elles forcément fausses ?</li>
-                                <li>Comment une IA pourrait-elle choisir une réponse ?</li>
-                                <li>Une réponse probable est-elle toujours vraie ?</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <div class="separator"></div>
-
-                <!-- exercise -------------------------------------------------------------------------------------- -->
-                <li>
-                    <h3>Manipulation : Dessiner c'est gagné !</h3>
-                    <div class="layout">
-
-                        <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
-                        <div class="layout__text">
-                            <ul>
-                                <li>Utiliser
-                                    <a href="https://quickdraw.withgoogle.com" target="_blank noopener noreferrer">
-                                        Quick, Draw!
-                                    </a>
-                                </li>
-                                <li>L’outil propose-t-il plusieurs réponses avant de reconnaître le dessin ?</li>
-                                <li>Un dessin détaillé est-il toujours mieux reconnu ?</li>
-                                <li>Pourquoi deux dessins du même objet donnent-ils des résultats différents ?</li>
-                                <li>L’outil comprend-il l’objet ?</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </section>
-    </main>
-
-    <!-- ***************************************************************************************************************
-         FOOTER
-    **************************************************************************************************************** -->
-    <footer>
-        <div>© Copyright - Guillaume Peyrard</div>
-    </footer>
-</body>
-</html>
+                <!-- layout element - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                <div class="layout__text">
+                    <ul>
+                        <li>Utiliser
+                            <a href="https://quickdraw.withgoogle.com" target="_blank noopener noreferrer">
+                                Quick, Draw!
+                            </a>
+                        </li>
+                        <li>L’outil propose-t-il plusieurs réponses avant de reconnaître le dessin ?</li>
+                        <li>Un dessin détaillé est-il toujours mieux reconnu ?</li>
+                        <li>Pourquoi deux dessins du même objet donnent-ils des résultats différents ?</li>
+                        <li>L’outil comprend-il l’objet ?</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ol>
+</section>

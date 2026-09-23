@@ -1,0 +1,64 @@
+<details id="menu-container">
+    <summary id="menu-opener" aria-label="Menu principal">
+        <i class="bi bi-list" aria-hidden="true"></i>
+    </summary>
+
+    <div id="full-menu">
+        <a class="menu" id="home-btn" href="{{ '/index.html' | relative_url }}">
+            <i class="bi bi-house-fill"></i>
+            <span>Accueil</span>
+        </a>
+
+        <div class="menu" id="main-menu">
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts de base</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/recognize.html' | relative_url }}">Reconnaître une IA</a></li>
+                    <li><a href="{{ '/pages/understand.html' | relative_url }}">Comprendre lee fonctionnement d'une IA</a></li>
+                    <li><a href="{{ '/pages/project-game.html' | relative_url }}">Projet : préparer le jeu pierre-feuille-ciseaux</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts intermédiaires</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/prompt.html' | relative_url }}">Donner une bonne consigne à une IA</a></li>
+                    <li><a href="{{ '/pages/data.html' | relative_url }}">Choisir les données à fournir à une IA</a></li>
+                    <li><a href="{{ '/pages/project-document.html' | relative_url }}">Projet : produire un document avec une IA générative</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Concepts avancés</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/check.html' | relative_url }}">Vérifier une production d'IA</a></li>
+                    <li><a href="{{ '/pages/use.html' | relative_url }}">Savoir quand on peut utiliser une IA</a></li>
+                    <li><a href="{{ '/pages/case-homework.html' | relative_url }}">Étude de cas : un travail d'élève produit avec l'IA</a></li>
+                </ul>
+            </details>
+
+            <details class="sub-menu" name="sub-menu">
+                <summary class="sub-menu-opener">
+                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                    <span>Bonus</span>
+                </summary>
+
+                <ul>
+                    <li><a href="{{ '/pages/commandments.html' | relative_url }}">10 commandements pour utiliser l'IA</a></li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</details>
